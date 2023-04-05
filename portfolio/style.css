@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+body {
+  margin: 0;
+  background-color: rgb(145, 106, 126)
+}
+
+/* imported multiple fonts to use */
+@font-face {
+  font-family: 'rakoon';
+  src: url(fonts/Rakoon_PersonalUse.ttf);
+}
+
+@font-face {
+  font-family: 'cocktail';
+  src: url(fonts/CocktailShakerRegular.otf);
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url(fonts/FuturaBold.otf);
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url(fonts/GothamBold.otf);
+}
+
+@font-face {
+font-family: 'allura';
+src: url(fonts/Allura-Regular.ttf);
+}
+
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 50px;
+  color: #6f3c50;
+}
+
+.portals {
+  box-shadow: 2px 2px 5px red;
+
+}
+
+/* attempted to change the styling of the font as well as its display */
+.p1 {
+  font-family: 'gotham';
+  color:rgb(230, 207, 215);
+  margin: 10px 20px 50px 60px;
+  line-height: 30px;
+}
+
+.p2 {
+  font-family: 'gotham';
+  color:rgb(230, 207, 215);
+  margin: 10px 20px 30px 20px;
+  line-height: 30px;
+
+}
+
+.p3 {
+  font-family: 'gotham';
+  color:rgb(230, 207, 215);
+  margin: 10px 20px 50px 600px;
+  line-height: 30px;
+  text-align: right;
+}
+
+.mel{
+  
+}
+
+.p4 {
+  font-family: 'gotham';
+  color:rgb(230, 207, 215);
+  margin: 10px 20px 30px 20px;
+  line-height: 30px;
+}
+
+.p5 {
+  font-family: 'gotham';
+  color:rgb(230, 207, 215);
+  margin: 10px 20px 30px 20px;
+  line-height: 30px;
+}
+
+.p6 {
+  font-family: 'gotham';
+  color:rgb(230, 207, 215);
+  margin: 10px 20px 30px 20px;
+  line-height: 30px;
+}
+
+/* created a top navigation bar with different clickable tabs */
+.topnav {
+  overflow: hidden;
+  background-color: #7aa183;
+  text-align: center;
+  font-family: 'gotham';
+}
+
+.topnav a {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: rgb(145, 106, 126);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(152, 64, 110);
+  color: rgb(255, 255, 255);
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+
+  <a class="active" href="#home">Home</a>
+  <a href="#gateway">Gateway</a>
+  <a href="#portal">Portal</a>
+  <a href="#threshold">Threshold</a>
+</div>
+
+<div style="padding-center:20px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  padding: 0 4px;
+}
+
+
+/* attemped to create my own grid however had some difficulty with centering and resizing */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 500%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+  <img src="https://64.media.tumblr.com/96d7197ab2dd07f4a6fdc12b21baa534/9fb486b06bf68bd0-0b/s1280x1920/03131fd6ab739d93baf30b14e69f92c188a88a5d.jpg">
+  <img src="https://64.media.tumblr.com/928c4e3c177a366255a0b1f3de8128c3/9fb486b06bf68bd0-52/s1280x1920/03a53e3a6df2f2ea6979558c4a98bb2044ec3a31.jpg">
+  <img src="https://64.media.tumblr.com/57dc9ff0ff12236412e3406bb7c2d8f0/9fb486b06bf68bd0-e6/s1280x1920/ae7b4f21908a2034e9dfa96500b7089ee5774e57.jpg">
+  <img src="https://64.media.tumblr.com/08db5c968afd5f8b86dae4300a7c3582/9fb486b06bf68bd0-b7/s250x400/9fab132cf66575c687b034fc42cd4f371a87a717.jpg">
+  <img src="https://64.media.tumblr.com/174964144256d4c60aa13430f0e546a8/9fb486b06bf68bd0-28/s500x750/cf4d647dcb84148803e7f8096a03475a4ef415f3.jpg">
+  <img src="https://64.media.tumblr.com/672e26637cc5be1df7f667320f19e8f1/9fb486b06bf68bd0-46/s2048x3072/9cdb1b9d30bfc65a798a1e9a0a958149c7c936c2.jpg">
+  <img src="https://64.media.tumblr.com/0398b2e2ea8132c308b00ba0ba76b75b/9fb486b06bf68bd0-b0/s1280x1920/1c5734926a3820c8f0e5233efa2dc1046fc5eedc.jpg">
+  <img src="https://64.media.tumblr.com/d5cec1b4cb973841cabe3f94f768e677/9fb486b06bf68bd0-b8/s400x600/8ec330ffdbc34d6ee19c97f8755ead773696d196.gifv">
+  <img src="https://64.media.tumblr.com/9ba18e203d2190fc9d1a045da98e1ba9/9fb486b06bf68bd0-7e/s1280x1920/2e1ae76c74d81fcb2025ee4b5f52ae43a2bf0f75.jpg">
+  </div>
+
+ 
+
+</body>
+</html>
